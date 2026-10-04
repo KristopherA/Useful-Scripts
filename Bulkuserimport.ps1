@@ -2,6 +2,9 @@
 Import-Module activedirectory
   
 #Store the data from ADUsers.csv in the $ADUsers variable
+# UPN suffix for new accounts (e.g. your AD/UPN domain)
+$UPNSuffix = "example.com"
+
 $ADUsers = Import-csv  C:\scripts\associates.csv
 
 #Loop through each row containing user details in the CSV file 
